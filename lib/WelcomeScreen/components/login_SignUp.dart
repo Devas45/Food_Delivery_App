@@ -22,7 +22,7 @@ class LoginAndSignUpBtn extends StatelessWidget {
                   )
                 );
               },
-              child: Text("Login".toUpperCase()),
+              child: Text("Login".toUpperCase(),style: TextStyle(color: Colors.white),),
             )),
         const SizedBox(height: kDefaultPadding),
         Hero(

@@ -12,7 +12,7 @@ class LoginScreenTopImage extends StatelessWidget {
       children : [
           Text(
           "LOGIN",
-          style: Theme.of(context).textTheme.headline4,
+          style: Theme.of(context).textTheme.bodySmall,
           textAlign:TextAlign.center,
         ),
         const SizedBox(height: kDefaultPadding),
@@ -21,7 +21,7 @@ class LoginScreenTopImage extends StatelessWidget {
             const Spacer(),
             Container(
               height: 300,
-              width: 100,
+              width: 310,
               child: SvgPicture.asset("assets/icons/delivery.svg"),
             ),
             const Spacer(),

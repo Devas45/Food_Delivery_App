@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:oyw/HomePage/HomePage.dart';
 import 'package:oyw/SignUp/signUpScreen.dart';
 import 'package:oyw/components/already_have_an_account.dart';
 import 'package:oyw/constants.dart';
@@ -44,17 +45,18 @@ class LoginForm extends StatelessWidget {
               tag : "login_btn",
               child: ElevatedButton(
                 onPressed:() {
-                  // Navigator.push(
-                  //   context,
-                  //   MaterialPageRoute(
-                  //     builder : (context) {
-                  //     return HomePage();
-                  //     }
-                  //   )
-                  // );
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder : (context) {
+                      return HomeScreen();
+                      }
+                    )
+                  );
                 },
                 child: Text(
                   "Login".toUpperCase(),
+                  style: TextStyle(color: Colors.white),
                  ),
               )
             ),

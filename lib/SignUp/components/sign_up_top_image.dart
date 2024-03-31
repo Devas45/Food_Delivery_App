@@ -10,8 +10,8 @@ class SignUpTopImage extends StatelessWidget {
     return Column(
       children: [
         Text(
-          "SIgn Up".toUpperCase(),
-          style: TextStyle(fontWeight: FontWeight.bold,fontSize : 10),
+          "Sign Up".toUpperCase(),
+          style: TextStyle(fontWeight: FontWeight.bold,fontSize : 30),
         ),
         const SizedBox(height : kDefaultPadding),
         Row(
@@ -20,7 +20,7 @@ class SignUpTopImage extends StatelessWidget {
             Container(
               height : 300,
               width : 300,
-              child: SvgPicture.asset("assets/images/Eating.svg"),
+              child: SvgPicture.asset("assets/icons/Eating.svg"),
             ),
             const Spacer(),
           ],

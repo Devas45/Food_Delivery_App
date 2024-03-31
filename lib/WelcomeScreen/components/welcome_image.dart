@@ -24,7 +24,7 @@ class WelcomeImage extends StatelessWidget {
             Container(
               width: 300,
               height: 300,
-              child: SvgPicture.asset("assets/icons/food-logo.svg"),
+              child: SvgPicture.asset("assets/icons/foodlogo.svg"),
             ),
             const Spacer(),
           ],
