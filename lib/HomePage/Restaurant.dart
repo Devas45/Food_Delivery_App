@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:oyw/HomePage/restaurantDetails.dart';
 import 'package:oyw/constants.dart';
 
 class RestaurantPage extends StatelessWidget {
@@ -80,7 +81,16 @@ Widget itemBuilder(Size size,BuildContext context,int index)
 {
   return Padding(padding: const EdgeInsets.symmetric(vertical : 10,horizontal : 10),
   child : GestureDetector(
-    onTap : () {},
+    onTap : () {
+      Navigator.push(
+        context,
+        MaterialPageRoute( 
+          builder : (context) => RestaurantDetails(
+            index : index,
+          )
+        )
+      );
+    },
     child : Material(
       elevation : 3,
       borderRadius : BorderRadius.circular(18),

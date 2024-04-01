@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:oyw/HomePage/Restaurant.dart';
+import 'package:oyw/HomePage/mapPage.dart';
 import 'package:oyw/HomePage/profile.dart';
 import 'package:oyw/constants.dart';
 
@@ -15,7 +16,7 @@ class _HomeScreenState extends State<HomeScreen> {
   List<Widget>_pages = [
     const MainHomePage(),
     const RestaurantPage(),
-    const MainHomePage(),
+    const MapPage(),
     const ProfilePage(),
   ];
   int _selectedindex = 0;
